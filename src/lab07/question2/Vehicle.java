@@ -5,36 +5,35 @@
 package lab07.question2;
 
 /**
- *
  * @author phats
  */
-public abstract class Vehicle implements Diselable {
+public abstract class Vehicle implements Dieselable {
     protected double fuel;
-    
+
     public Vehicle() {
-	this(0);
+        this(0);
     }
-    
+
     public Vehicle(double fuel) {
-	this.fuel = fuel;
+        this.fuel = fuel;
     }
-    
+
     public void setFuel(double fuel) {
-	this.fuel = fuel;
+        this.fuel = fuel;
     }
-    
+
     public double getFuel() {
-	return this.fuel;
+        return this.fuel;
     }
-    
+
     public void addFuel(double fuel) {
-	if (fuel <= 0) {
-	    System.out.println("Fuel is empty.");
-	    return;
-	}
-	
-	this.setFuel(this.getFuel() + fuel);
+        if (fuel <= 0) {
+            System.out.println("Fuel is empty.");
+            return;
+        }
+
+        this.setFuel(this.getFuel() + fuel);
     }
-    
+
     public abstract void honk();
 }

@@ -63,7 +63,7 @@ public class Plane extends Vehicle implements Flyable {
     @Override
     public void fly() {
 	if (this.getFuel() >= 20) {
-	    System.out.println("Plane fly");
+	    System.out.println("Plane Fly");
 	    this.setFuel(this.getFuel() - 20);
 	} else {
 	    System.out.println("Fuel is nearly empty.");

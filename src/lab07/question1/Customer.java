@@ -47,7 +47,7 @@ public class Customer {
     public String toString() {
         if (this.acct == null) {
             return String.format(
-                    "%s %s doesn't have account.",
+                    "%s %s doesn’t have account.",
                     this.getFirstName(), this.getLastName()
             );
         } else {

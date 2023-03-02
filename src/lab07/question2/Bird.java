@@ -6,7 +6,7 @@ public abstract class Bird implements Flyable {
     private double height;
 
     public Bird() {
-	this(0, 0, 0);
+        this(0, 0, 0);
     }
 
     public Bird(double wingSize, double weight, double height) {
@@ -38,13 +38,13 @@ public abstract class Bird implements Flyable {
     public void setHeight(double height) {
         this.height = height;
     }
-    
+
     public void eat(double food) {
-	if (food <= 0) {
-	    System.out.println("Input cannot be negative number.");
-	    return;
-	}
-	
-	this.setWeight(this.getWeight() + food);
+        if (food <= 0) {
+            System.out.println("Input cannot be negative number.");
+            return;
+        }
+
+        this.setWeight(this.getWeight() + food);
     }
 }
