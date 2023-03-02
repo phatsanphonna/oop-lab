@@ -1,4 +1,4 @@
-package lab06.question1;
+package lab06;
 
 public class Seller extends Employee {
     public Food sell(Employee e) {

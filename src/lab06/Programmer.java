@@ -1,4 +1,4 @@
-package lab06.question1;
+package lab06;
 
 public class Programmer extends Employee {
     private int happiness;
@@ -23,13 +23,6 @@ public class Programmer extends Employee {
     }
 
     public void coding(char str) {
-        if (super.getEnergy() >= 30) {
-            System.out.printf("Your code is %c\n", str);
-        } else {
-            System.out.println("Error Error Error");
-        }
-
-        super.setEnergy(super.getEnergy() - 30);
-        this.setHappiness(this.getHappiness() - 30);
+        this.coding(String.valueOf(str));
     }
 }

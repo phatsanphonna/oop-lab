@@ -1,4 +1,4 @@
-package lab06.question1;
+package lab06;
 
 public class Wallet {
     private double balance;

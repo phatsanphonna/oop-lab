@@ -1,4 +1,4 @@
-package lab06.question1;
+package lab06;
 
 public class Food {
     private final static int energy = 10;
