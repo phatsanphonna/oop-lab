@@ -1,4 +1,4 @@
-package lab07.question1;
+package lab08;
 
 public class Account {
     protected double balance;
@@ -42,7 +42,7 @@ public class Account {
             System.out.println("Not enough money!");
         } else {
             this.setBalance(this.getBalance() - a);
-            System.out.printf("%.1f baht is withdrawn from %s.\n", a, this.getName());
+            System.out.printf("%.1f baht is withdrawn from %s\n.", a, this.getName());
         }
     }
 
